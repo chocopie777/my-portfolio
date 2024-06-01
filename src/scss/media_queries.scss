@@ -1,4 +1,13 @@
 //медиа запросы @media (max-width: 1200px) {}
+@media (max-width: 768px) {
+    .menu__list-link {
+        &:hover {
+            background-color: white;
+            color: #000;
+            transition: none;
+        }
+    }
+}
 @media (max-width: 600px) {
     .header__inner {
         flex-direction: column;
