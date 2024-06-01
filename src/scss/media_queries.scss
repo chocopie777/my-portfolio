@@ -1,1 +1,31 @@
 //медиа запросы @media (max-width: 1200px) {}
+@media (max-width: 600px) {
+    .header__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header {
+        height: auto;
+    }
+    .logo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .menu {
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 400px) {
+    .menu__list-link {
+        font-size: 13.5px;
+    }
+    body {
+        font-size: 14px;
+    }
+    .title {
+        font-size: 20px;
+    }
+    .logo span {
+        font-size: 16px;
+    }
+}

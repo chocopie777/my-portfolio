@@ -2,16 +2,19 @@
 @import 'libs.scss';
 
 //код писать тута -->
+body {
+    font-family: 'JetBrainsMono';
+    font-size: 16px;
+    color: #000;
+}
 .container {
     max-width: 800px;
     margin: 0 auto;
     padding: 0 15px;
-}
-header {
-    // background: #000;
+    min-width: 320px;
 }
 .header {
-    height: 41px;
+    height: 51px;
     // background: green;
     display: flex;
     flex-direction: column;
@@ -32,9 +35,36 @@ header {
 .menu__list-link {
     text-decoration: none;
     color: #000;
+    font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 18px;
 }
 .title {
     text-align: center;
+    font-size: 24px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo span {
+    font-family: 'HelveticaNeueCyr-Bold';
+    font-size: 18px;
+}
+a {
+    color: blue;
+}
+.portfolio-list__item, .experience-list__item {
+    margin-bottom: 10px;
+}
+.menu__list-link {
+    padding: 5px;
+    border: 1px solid;
+    // border-bottom: 1px solid;
+    &:hover {
+        background-color: #000;
+        color: white;
+        transition: all .3s ease;
+    }
 }
 
 @import 'media_queries.scss';
