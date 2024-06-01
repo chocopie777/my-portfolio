@@ -2,5 +2,39 @@
 @import 'libs.scss';
 
 //код писать тута -->
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+header {
+    // background: #000;
+}
+.header {
+    height: 41px;
+    // background: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #000;
+    margin-bottom: 10px;
+}
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.menu__list {
+    display: flex;
+}
+.menu__list-item + .menu__list-item {
+    margin-left: 15px;
+}
+.menu__list-link {
+    text-decoration: none;
+    color: #000;
+}
+.title {
+    text-align: center;
+}
 
 @import 'media_queries.scss';
