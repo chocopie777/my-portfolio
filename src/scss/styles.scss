@@ -6,6 +6,7 @@ body {
     font-family: 'JetBrainsMono';
     font-size: 16px;
     color: #000;
+    background-color: white;
 }
 .container {
     max-width: 800px;
@@ -59,11 +60,14 @@ a {
 .menu__list-link {
     padding: 5px;
     border: 1px solid;
-    // border-bottom: 1px solid;
     &:hover {
         background-color: #000;
         color: white;
         transition: all .3s ease;
+    }
+    &--active {
+        background-color: #000;
+        color: white;
     }
 }
 

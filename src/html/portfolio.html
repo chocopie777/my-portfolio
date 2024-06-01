@@ -6,7 +6,13 @@
 })
 
 <body>
-    @@include('components/header.html')
+    @@include('components/header.html', {
+        "active": {
+            "about": "",
+            "portfolio": "menu__list-link--active",
+            "contacts": ""
+        }
+    })
     <main>
         <div class="container">
             <h2 class="title">-ПОРТФОЛИО-</h2>
